@@ -7,7 +7,7 @@
 
 > Proyecto desarrollado como parte del bootcamp de Data Analytics
 > de TripleTen (2026). Análisis estadístico completo sobre datos
-> reales de una tienda online — pedidos, visitas y resultados
+> reales de una tienda online - pedidos, visitas y resultados
 > de experimento A/B.
 
 ---
@@ -29,7 +29,7 @@ la variante B, mantener A, o necesitar más datos?
 
 ## 2. Metodología
 
-### Parte 1 — Priorización de hipótesis
+### Parte 1 - Priorización de hipótesis
 
 **Framework ICE** (Impact × Confidence × Ease)
 - Evaluación individual de las 9 hipótesis
@@ -40,21 +40,21 @@ la variante B, mantener A, o necesitar más datos?
 - Comparación de rankings ICE vs RICE
 - Análisis de por qué cambia la prioridad al incluir el Reach
 
-### Parte 2 — Análisis del test A/B
+### Parte 2 - Análisis del test A/B
 
-**Paso 1 — Limpieza y detección de anomalías**
+**Paso 1 - Limpieza y detección de anomalías**
 - Identificación de usuarios presentes en ambos grupos
   simultáneamente
 - Detección de outliers por percentiles **95 y 99**
   en pedidos por usuario y en precios de pedidos
 
-**Paso 2 — Análisis exploratorio**
+**Paso 2 - Análisis exploratorio**
 - Ingresos acumulados por grupo (A vs B) en el tiempo
 - Tamaño de pedido promedio acumulado por grupo
 - Diferencia relativa del grupo B vs grupo A
 - Tasas de conversión diarias por grupo
 
-**Paso 3 — Pruebas de significancia estadística**
+**Paso 3 - Pruebas de significancia estadística**
 - Conversión: datos brutos y datos filtrados (sin outliers)
 - Ticket promedio: datos brutos y datos filtrados
 - Cálculo de p-valores para cada escenario
@@ -75,12 +75,12 @@ la variante B, mantener A, o necesitar más datos?
 
 ## 4. Hallazgos principales
 
-### ICE vs RICE — diferencia clave
+### ICE vs RICE - diferencia clave
 
 Al incorporar el **Reach** (alcance de usuarios) en el
 framework RICE, el ranking de hipótesis cambió
 significativamente. La hipótesis top en ICE no era la
-top en RICE — las hipótesis que impactan a más usuarios
+top en RICE, las hipótesis que impactan a más usuarios
 subieron posiciones aunque requirieran más esfuerzo.
 
 ### Test A/B — resultados estadísticos
@@ -94,7 +94,7 @@ subieron posiciones aunque requirieran más esfuerzo.
 
 **Hallazgo crítico:** La aparente ventaja de **$29 en ticket
 promedio del grupo B desapareció completamente al filtrar
-outliers** — era ruido estadístico puro. El efecto real
+outliers**, era ruido estadístico puro. El efecto real
 del test estaba únicamente en conversión.
 
 **Mejora real confirmada:**
@@ -112,14 +112,14 @@ consistente bajo ambos análisis (bruto y filtrado) y
 representa un impacto real medible en el negocio.
 
 **- No optimizar el ticket promedio** basándose en los
-resultados de este test — la diferencia observada no es
+resultados de este test - la diferencia observada no es
 real, es ruido generado por valores atípicos.
 
 **- Implementar variante B con monitoreo post-lanzamiento**
 para confirmar que la mejora de conversión se mantiene
 en producción.
 
-**- Priorizar según RICE, no ICE** — el alcance de usuarios
+**- Priorizar según RICE, no ICE** - el alcance de usuarios
 es un factor determinante que ICE ignora y que puede
 cambiar completamente el orden de implementación.
 
