@@ -112,14 +112,14 @@ consistente bajo ambos análisis (bruto y filtrado) y
 representa un impacto real medible en el negocio.
 
 **- No optimizar el ticket promedio** basándose en los
-resultados de este test - la diferencia observada no es
+resultados de este test. La diferencia observada no es
 real, es ruido generado por valores atípicos.
 
 **- Implementar variante B con monitoreo post-lanzamiento**
 para confirmar que la mejora de conversión se mantiene
 en producción.
 
-**- Priorizar según RICE, no ICE** - el alcance de usuarios
+**- Priorizar según RICE, no ICE**. El alcance de usuarios
 es un factor determinante que ICE ignora y que puede
 cambiar completamente el orden de implementación.
 
@@ -151,11 +151,11 @@ jupyter notebook gran_tienda_online.ipynb
 ## 7. Estructura del repositorio
 
 Test_A-B_priorizacion_hipotesis-_Tienda_online
-├──  gran_tienda_online.ipynb # Análisis completo
-├──  orders_us.csv # Datos de pedidos del test
-├──  visits_us.csv # Datos de visitas del test
-├──  hypotheses_us.csv # Las 9 hipótesis evaluadas
-└──  README.md # Este archivo
+- gran_tienda_online.ipynb # Análisis completo
+- orders_us.csv # Datos de pedidos del test
+- visits_us.csv # Datos de visitas del test
+- hypotheses_us.csv # Las 9 hipótesis evaluadas
+- README.md # Este archivo
 
 ##  Autor
 
