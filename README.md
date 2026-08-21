@@ -83,7 +83,7 @@ significativamente. La hipótesis top en ICE no era la
 top en RICE, las hipótesis que impactan a más usuarios
 subieron posiciones aunque requirieran más esfuerzo.
 
-### Test A/B — resultados estadísticos
+### Test A/B - resultados estadísticos
 
 | Métrica | Grupo A | Grupo B | P-valor | Significativo |
 |---|---|---|---|---|
