@@ -150,7 +150,7 @@ jupyter notebook gran_tienda_online.ipynb
 
 ## 7. Estructura del repositorio
 
-Test_A-B_priorizacion_hipotesis-_Tienda_online
+Test_A/B_priorizacion_hipotesis_Tienda_online
 - gran_tienda_online.ipynb # Análisis completo
 - orders_us.csv # Datos de pedidos del test
 - visits_us.csv # Datos de visitas del test
@@ -159,7 +159,7 @@ Test_A-B_priorizacion_hipotesis-_Tienda_online
 
 ##  Autor
 
-**Nicolás Espinosa Bedoya** — Data Analyst
+**Nicolás Espinosa Bedoya** - Data Analyst
  [Portafolio](https://xnico619x.github.io) ·
  [LinkedIn](https://www.linkedin.com/in/nicolas-espinosa-bedoya-data-analyst) ·
  inge.nicoespi@gmail.com
